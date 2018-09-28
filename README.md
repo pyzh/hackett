@@ -45,7 +45,7 @@ Here’s some sample Hackett code that demonstrates some of Hackett’s features
         [z 7])
     {y + z}))
 
-(类 (Show a)
+(类 (示 a)
   [示 : {a -> String}])
 
 (例 (forall [a] (示 a) => (示 (也 a)))
