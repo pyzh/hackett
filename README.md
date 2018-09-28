@@ -34,23 +34,23 @@ Due to the way Hackett is implemented, many things that are language features in
 Here’s some sample Hackett code that demonstrates some of Hackett’s features:
 
 ```racket
-#lang hackett
+#言 hackett
 
-(data (Maybe a)
-  Nothing
-  (Just a))
+(data (也 a)
+  无
+  (就 a))
 
-(def x : Integer
-  (let ([y 3]
+(设 x : Integer
+  (令 ([y 3]
         [z 7])
     {y + z}))
 
-(class (Show a)
-  [show : {a -> String}])
+(类 (Show a)
+  [示 : {a -> String}])
 
-(instance (forall [a] (Show a) => (Show (Maybe a)))
-  [show (λ* [[(Just x)] {"(Just " ++ (show x) ++ ")"}]
-            [[Nothing ] "Nothing"])])
+(例 (forall [a] (示 a) => (示 (也 a)))
+  [示 (λ* [[(就 x)] {"(Just " ++ (示 x) ++ ")"}]
+            [[无 ] "Nothing"])])
 ```
 
 [**For a much more in-depth look at Hackett, see the documentation.**][hackett-docs]
